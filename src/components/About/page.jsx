@@ -1,5 +1,5 @@
 import React from 'react';
-
+import founder from './images/founder.jpg'
 const About = () => {
     return (
         <div style={{
@@ -47,7 +47,7 @@ const About = () => {
                     textAlign: 'left'
                 }}>
                     <img 
-                        src="/src/components/About/images/founder.jpg" 
+                        src={founder}
                         alt="Founder" 
                         style={{ maxWidth: '400px',  borderRadius: '2%', marginBottom: '1em' }} 
                     />
