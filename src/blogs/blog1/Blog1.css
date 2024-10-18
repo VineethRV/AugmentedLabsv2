@@ -1,0 +1,264 @@
+/* Page Content */
+.container {
+    margin: 2em auto;
+    padding: 2em;
+    background-color: #333;
+    border-radius: 8px;
+}
+p {
+    margin-bottom: 1.5em;
+    color: #ccc;
+}
+
+
+#construction ul {
+    list-style-type: none;
+    padding-left: 2em;
+    color: #bbb;
+    margin-bottom: 2em;
+}
+#construction ul li {
+    margin-bottom: 0.5em;
+}
+#construction ul li a {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+#construction ul li a:hover {
+    color: white;
+}
+ul {
+    list-style-type: disc;
+    padding-left: 1.5em;
+    color: #ccc;
+}
+section section{
+    padding-left: 2em;
+}
+section p{
+    padding-left: 2em;
+}
+section ul{
+    margin-left: 2em;
+}
+.alignImage {/* Default for laptops and larger screens */
+    align-items: center;
+    justify-content: space-evenly;
+}
+.imgageProp{
+    height: 15em !important;
+    border-radius: 2em;
+}
+/* Section headings styling */
+section h2 {
+    font-size: 1.8em;
+    color: #ffffff; /* Vibrant color */
+    margin-top: 1.5em;
+    border-bottom: 2px solid #ffffff; /* Underline effect */
+    padding-bottom: 0.5em;
+}
+
+/* Part section styling */
+.part-section {
+    margin-top: 1.5em;
+    background-color: #222;
+    border-radius: 8px;
+    padding: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Image styling */
+.part-section img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1em;
+}
+
+/* Styling the buttons */
+.part-section .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.part-section .btn:hover {
+    background-color: #ffffff;
+}
+
+/* List styling */
+.part-section ul {
+    margin-left: 1.5em;
+    color: #ddd;
+}
+
+.part-section ul li {
+    margin-bottom: 0.5em;
+}
+
+/* Process steps styling */
+.part-section ol {
+    margin-left: 2em;
+    color: #ccc;
+}
+
+.part-section ol li {
+    margin-bottom: 0.5em;
+}
+
+/* Video embed styling */
+.part-section iframe {
+    width: 100%;
+    height: 315px;
+    margin-top: 1em;
+    border-radius: 8px;
+}
+
+/* Media query for phones (typically screens up to 768px wide) */
+@media (max-width: 768px) {
+    .alignImage {
+        flex-direction: column;
+    }
+    img{
+        height: auto;
+        width: 90%;
+    }
+    #mainIMG{
+        width: 90%;
+    }
+
+}
+
+@media screen and (min-width:768px){
+    body{
+        font-size: 1.2rem;
+    }
+    #mainIMG{
+        height: auto;
+        width: 50%;
+    }
+}
+/* General styling for grouped sections */
+.grouped-section {
+    margin-top: 2em;
+    background-color: #2a2a2a; /* Darker shade to differentiate */
+    border-radius: 8px;
+    padding: 2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Differentiating Introduction, Overview, Shortcomings, and Conclusion */
+#introduction {
+    background-color: #383838; /* Unique color for Introduction */
+}
+
+#overview {
+    background-color: #383838; /* Unique color for Overview */
+}
+
+#shortcomings {
+    background-color: #383838; /* Unique color for Shortcomings */
+}
+
+#conclusion {
+    background-color: #383838; /* Unique color for Conclusion */
+}
+#construction{
+    
+    background-color: #383838;
+    width:100%;
+    margin-top: 5%;
+    padding: 1rem;
+    border-radius: 0.5em;
+}
+
+/* Typography and spacing adjustments */
+.grouped-section h1 {
+    color: #ffffff;
+    font-size: 2.2em;
+    margin-bottom: 1em;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 0.5em;
+}
+
+.grouped-section p, .grouped-section ul {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.grouped-section ul {
+    list-style-type: disc;
+    margin-left: 2em;
+}
+.desc{
+    margin-top: 1em;
+    font-size: 0.9em;
+}
+.Views {
+display: flex;
+flex-wrap: wrap; /* Allows images to wrap to the next row if necessary */
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+height: auto; /* Adjust height based on content */
+min-height: 40vh;
+}
+
+.Views img {
+height: 30vh; /* Adjusts image height dynamically */
+max-height: 350px; /* Prevents images from getting too large */
+object-fit: cover; /* Ensures images retain aspect ratio */
+margin: 10px; /* Adds space between images */
+}
+
+/* Additional styles for responsiveness */
+@media (max-width: 768px) {
+.Views img {
+    height: 25vh;
+    max-height: 300px;
+}
+}
+
+@media (max-width: 480px) {
+.Views img {
+    height: 20vh;
+    max-height: 250px;
+}
+}
+/* CSS Styles */
+.video-container {
+width: 100%; /* Container width adapts to parent */
+display: flex; /* Flexbox layout for centering */
+justify-content: center; /* Centers the video horizontally */
+align-items: center; /* Centers the video vertically */
+margin: 20px 0; /* Adds some margin above and below */
+}
+
+.dynamic-video {
+width: 80%; /* Default width of the video */
+max-width: 1000px; /* Prevents video from growing too large */
+height: auto; /* Keeps the aspect ratio */
+border: 2px solid #ccc; /* Adds a border for visual appeal */
+border-radius: 10px; /* Slight rounding for aesthetics */
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds subtle shadow */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+.dynamic-video {
+    width: 90%; /* Wider width on smaller screens */
+}
+}
+
+@media (max-width: 480px) {
+.dynamic-video {
+    width: 100%; /* Full width for very small screens */
+}
+}

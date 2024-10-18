@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  scrollbar-width: none;
+}
+
+.text-gradient-opacity {
+  background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.4));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body {
+    font-family: 'Montserrat', cursive;
+    background-color: black;
+}
+
+@keyframes underline-from-left {
+    0% {
+      width: 0;
+      left: 0;
+      right: auto;
+    }
+    100% {
+      width: 100%;
+      left: 0;
+      right: auto;
+    }
+  }
+  
+  .underline-animation {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: currentColor;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .underline-animation:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+
+  .hamburger-btn .line {
+    transition: all 0.3s ease;
+  }
+  
+  .hamburger-btn .line1 {
+    transform-origin: 4px 6px;
+  }
+  
+  .hamburger-btn .line2 {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+  
+  .hamburger-btn .line3 {
+    transform-origin: 4px 18px;
+  }
+  
+  .open .hamburger-btn .line1 {
+    transform: rotate(45deg);
+  }
+  
+  .open .hamburger-btn .line2 {
+    opacity: 0;
+  }
+  
+  .open .hamburger-btn .line3 {
+    transform: rotate(-45deg);
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-slideDown {
+    animation: slideDown 0.3s forwards;
+  }
