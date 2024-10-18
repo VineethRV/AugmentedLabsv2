@@ -124,7 +124,7 @@ export default function App() {
         {/* Layout to handle particle background */}
         <Layout>
           {/* Content */}
-          <div style={{ position: 'relative', zIndex: 1, padding: '20px' }}>
+          <div style={{ position: 'relative', zIndex: 1, padding: '5px' }}>
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/about" element={<About />} />

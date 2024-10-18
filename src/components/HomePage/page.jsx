@@ -2,7 +2,7 @@ import HeroSection from "./components/heroSection";
 import LatestProduct from "./components/product";
 import LatestCard from "./components/latestSection"
 import { Link } from 'react-router-dom';
-import latestImg from './components/images/spooler.png'
+import latestImg from './components/images/spoolerJ.jpg'
 
 const HomePage = () => {
   return (

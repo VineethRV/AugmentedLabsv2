@@ -20,7 +20,7 @@ import Circuit from './images/circuit.jpeg';
 const BlogPost = () => {
     
     return (
-        <div className="container w-11/12 lg:w-3/4" style={{color:'white',marginTop:'6em'}}>
+        <div className="container w-12/12 lg:w-3/4" style={{color:'white',marginTop:'6em'}}>
             <div className="alignImage flex flex-col-reverse lg:flex-row" >
                 <div className="heading-container">
                     <h1 style={{fontSize:'1.8em',marginTop:'1.5em',marginBottom:'0.5em',fontWeight:'bold',color:'white'}}>Filament Recycler Under 100 Dollars</h1>
@@ -37,12 +37,12 @@ const BlogPost = () => {
                         </ul>
                     </nav>
                 </div>
-                <img className="imageProp" src={Overall} alt="Filament Recycler Icon" id="mainIMG" style={{height:'20em',width:'auto',borderRadius:'1.5em'}}/>
+                <img className="imageProp" src={Overall} alt="Filament Recycler Icon" id="mainIMG" style={{maxHeight:'20em',width:'auto',borderRadius:'1.5em'}}/>
             </div>
             <section id="introduction" className="grouped-section">
                 <h1>Introduction</h1>
                 <div className="alignImage flex flex-col lg:flex-row">
-                    <img className="imageProp " src = {FilementWaste} style={{height:'20em',width:'auto',borderRadius:'1.5em', marginBottom:'1em'}}alt="sample image" />
+                    <img className="imageProp " src = {FilementWaste} style={{maxHeight:'20em',width:'auto',borderRadius:'1.5em', marginBottom:'1em'}}alt="sample image" />
                 <p>
                     3D printing enthusiasts often face the issue of filament waste, which not only impacts the environment but also adds 
                     to the cost of 3D printing. Commertially available filament recyclers are very expensive, which inturn makes the premium for
@@ -62,7 +62,7 @@ const BlogPost = () => {
                         <li>Spooler: Wraps the filament onto a spool</li>
                         <li>Controll Hub: User interface to controll the system </li>
                     </ul>
-                    <img className="imageProp"style={{height:'20em',width:'auto',borderRadius:'1.5em', marginTop:'2em'}} src={Steps} alt="Insert Process image here" />
+                    <img className="imageProp"style={{maxHeight:'20em',width:'auto',borderRadius:'1.5em', marginTop:'2em'}} src={Steps} alt="Insert Process image here" />
                 </p>
             </section>
 
