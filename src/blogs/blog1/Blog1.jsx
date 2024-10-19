@@ -60,7 +60,7 @@ const BlogPost = () => {
                         <li>Grinder: Further converts shredded chunks into finer grains</li>
                         <li>Moulder: Heats and shapes grins into the standard 1.75mm diameter filament tube</li>
                         <li>Spooler: Wraps the filament onto a spool</li>
-                        <li>Controll Hub: User interface to controll the system </li>
+                        <li>Control Hub: User interface to control the system </li>
                     </ul>
                     <img className="imageProp"style={{maxHeight:'20em',width:'auto',borderRadius:'1.5em', marginTop:'2em'}} src={Steps} alt="Insert Process image here" />
                 </p>
@@ -135,7 +135,7 @@ const BlogPost = () => {
                         cursor: 'pointer',
                         transition: 'color 0.3s'
                     }} onMouseEnter={e => e.target.style.color = 'white'} onMouseLeave={e => e.target.style.color = '#bbb'}>
-                        Controll Hub:
+                        Control Hub:
                     </a>
                     </li>
                 </ul>
@@ -290,7 +290,7 @@ const BlogPost = () => {
                 
                 <section id="spooler" className="part-section"> 
                     <h2>Spooler</h2>
-                    <p className="desc">After the filament is extruded from the moulder, the Spooler spools it around a spool. Spooler can even controll the diameter of the filament. </p>
+                    <p className="desc">After the filament is extruded from the moulder, the Spooler spools it around a spool. Spooler can even control the diameter of the filament. </p>
                 
                     <div className="Views">
                         <img className="imageProp" src={SpoolerIsometric} alt="Spooler Isometric View"/>
